@@ -7,21 +7,15 @@ _**Live at -** https://acmbvp.github.io/InterQues_
 For making any changes (from your local system), just following the following steps
 
 - fork this repository into your github account (create one if you don't have it yet)
-- clone it to your system (git clone <link>)
+- clone it to your system (`git clone https://github.com/acmbvp/InterQues.git`)
 - in the terminal run `git remote add upstream https://github.com/acmbvp/InterQues.git` (this is for taking a fresh update of the code anytime in the future)
-- create a new branch from the [Branch Types](#branch-types) below
-- **IMPORTANT STEP:** get the updated code, run command `git pull upstream development` in terminal
-- make the changes, commit and push them to your forked repository
-- create a pull request (mark an issue if it resolves one)
-
-##### Branch Types
-
-- doc-_branch name_ (Changes to documentation)
-- newq-_branch name_ (For adding a new question)
-- correction-_branch name_ (Making a correction to an answer/question)
-- upvote-_branch name_ (Once you upvote a question)
-- hotfix-_branch name_ (fixing something if it doesn't work)
-- struct-_branch name_ (for structural additions/changes)
+- **IMPORTANT STEP:** get the updated code, run command `git pull upstream master` in terminal
+- make the changes:
+  - append your question in the list in [`ds-and-algo/index.html`](https://github.com/acmbvp/InterQues/blob/master/ds-and-algo/index.html)
+  - add the solution inside `ds-and-algo/answers/<question_no>.html` _(refer [`template.html`](https://github.com/acmbvp/InterQues/blob/master/ds-and-algo/answers/template.html) for the same)_
+- commit and push them to your forked repository
+- create a pull request (PR)
+- _Voila!_ You're done.
 
 ## Installing Git
 
