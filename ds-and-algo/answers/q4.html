@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <title>Data Structures And Algorithms | InterQues</title>
+  </head>
+  <body>
+    <div>
+      <img
+        src="../../assets/hacktoberfest.png"
+        height="120px"
+        alt="Hacktoberfest"
+      />
+    </div>
+
+    <div>
+      <p>
+        <small>
+          <a href="../../index.html">Home</a>
+          &gt;
+          <a href="../index.html"> Data Structures and Algorithms Questions</a>
+          &gt;
+          Write a Python program to determine if a number is Prime or not.
+        </small>
+      </p>
+    </div>
+
+    <div>
+      <div>
+        <h4>
+          Write a Python program to determine if a number is Prime or not.
+        </h4>
+      </div>
+
+      <br />
+      <br />
+
+      <div>
+        <strong>Answer:</strong>
+
+        <p>
+          # Program to check if a number is prime or not
+
+          num = 407
+
+          # To take input from the user
+          #num = int(input("Enter a number: "))
+
+          # prime numbers are greater than 1
+          if num > 1:
+             # check for factors
+             for i in range(2,num):
+                 if (num % i) == 0:
+                     print(num,"is not a prime number")
+                     print(i,"times",num//i,"is",num)
+                     break
+             else:
+                 print(num,"is a prime number")
+                 
+          # if input number is less than
+          # or equal to 1, it is not prime
+          else:
+             print(num,"is not a prime number")
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
