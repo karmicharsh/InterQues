@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <title>Data Structures And Algorithms | InterQues</title>
+  </head>
+  <body>
+    <div>
+      <img
+        src="../../assets/hacktoberfest.png"
+        height="120px"
+        alt="Hacktoberfest"
+      />
+    </div>
+
+    <div>
+      <p>
+        <small>
+          <a href="../../index.html">Home</a>
+          &gt;
+          <a href="../index.html"> Data Structures and Algorithms Questions</a>
+          &gt;
+          Rotate Array
+        </small>
+      </p>
+    </div>
+
+    <div>
+      <div>
+        <h4>
+          Rotate Array
+        </h4>
+      </div>
+
+      <br />
+      <br />
+
+      <div>
+        <strong>Answer:</strong>
+
+        <p>
+            def rotate(nums, k):
+            n = len(nums)
+            k %= n
+            nums[:] = nums[-k:] + nums[:-k]
+        
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

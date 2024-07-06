@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <title>Data Structures And Algorithms | InterQues</title>
+  </head>
+  <body>
+    <div>
+      <img
+        src="../../assets/hacktoberfest.png"
+        height="120px"
+        alt="Hacktoberfest"
+      />
+    </div>
+
+    <div>
+      <p>
+        <small>
+          <a href="../../index.html">Home</a>
+          &gt;
+          <a href="../index.html"> Data Structures and Algorithms Questions</a>
+          &gt;
+          Kadane's Algorithm
+        </small>
+      </p>
+    </div>
+
+    <div>
+      <div>
+        <h4>
+          Maximum Subarray(Kadane's Algorithm)
+        </h4>
+      </div>
+
+      <br />
+      <br />
+
+      <div>
+        <strong>Answer:</strong>
+
+        <p>
+            def maxSubArray(nums):
+            max_so_far = nums[0]
+            max_ending_here = nums[0]
+            for i in range(1, len(nums)):
+                max_ending_here = max(nums[i], max_ending_here + nums[i])
+                max_so_far = max(max_so_far, max_ending_here)
+            return max_so_far
+        
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
